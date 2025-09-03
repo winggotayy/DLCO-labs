@@ -1,6 +1,6 @@
 # DLCO Labs 
 
-Courselab projects for **Digital Logic & Computer Organization (DLCO)**.
+Courselab projects for NJU Digital Logic & Computer Organization 数字逻辑与计算机组成实验.
 
 ## 🛠️ Technologies & Tools
 
