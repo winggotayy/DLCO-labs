@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Mar  7 14:37:17 2023
+# Process ID: 10032
+# Current directory: F:/lab01/lab01
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8312 F:\lab01\lab01\lab01.xpr
+# Log file: F:/lab01/lab01/vivado.log
+# Journal file: F:/lab01/lab01\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/lab01/lab01/lab01.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {F:/lab01/lab01/lab01.runs/impl_1/lab01.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+open_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/lab01/lab01/lab01.runs/impl_1/lab01.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

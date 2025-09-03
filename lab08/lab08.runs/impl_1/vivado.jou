@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 15 20:40:23 2023
+# Process ID: 4816
+# Current directory: F:/DigitalDesign2023/lab08/lab08.runs/impl_1
+# Command line: vivado.exe -log lab08.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab08.tcl -notrace
+# Log file: F:/DigitalDesign2023/lab08/lab08.runs/impl_1/lab08.vdi
+# Journal file: F:/DigitalDesign2023/lab08/lab08.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab08.tcl -notrace

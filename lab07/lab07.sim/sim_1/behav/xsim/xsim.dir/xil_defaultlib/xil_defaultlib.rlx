@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+F:/DigitalDesign2023/lab07/lab07.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+F:/DigitalDesign2023/lab07/lab07.srcs/sources_1/new/keyboard.v,1683447612,verilog,,,,keyboard,,,,,,,,
+F:/DigitalDesign2023/lab07/lab07.srcs/sources_1/new/ps2_keyboard.v,1683443274,verilog,,F:/DigitalDesign2023/lab07/lab07.srcs/sources_1/new/scancode_ram.v,,ps2_keyboard,,,,,,,,
+F:/DigitalDesign2023/lab07/lab07.srcs/sources_1/new/scancode_ram.v,1683448398,verilog,,F:/DigitalDesign2023/lab07/lab07.srcs/sources_1/new/keyboard.v,,scancode_ram,,,,,,,,

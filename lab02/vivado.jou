@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 15 19:05:09 2023
+# Process ID: 4864
+# Current directory: F:/lab02/lab02
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2328 F:\lab02\lab02\lab02.xpr
+# Log file: F:/lab02/lab02/vivado.log
+# Journal file: F:/lab02/lab02\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/lab02/lab02/lab02.xpr
+update_compile_order -fileset sources_1
+file mkdir F:/lab02/lab02/lab02.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/lab02/lab02/lab02.srcs/sim_1/new/lab02_test.v w ]
+add_files -fileset sim_1 F:/lab02/lab02/lab02.srcs/sim_1/new/lab02_test.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source lab02_test.tcl
+close_sim

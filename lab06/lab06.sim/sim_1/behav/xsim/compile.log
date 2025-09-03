@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/lab06/lab06.srcs/sources_1/new/lab06_random.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab06_random
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/lab06/lab06.srcs/sim_1/new/lab06_random_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab06_random_test

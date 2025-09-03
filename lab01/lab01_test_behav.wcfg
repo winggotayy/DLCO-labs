@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="lab01_test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab01_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/lab01_test/X0" type="array">
+      <obj_property name="ElementShortName">X0[1:0]</obj_property>
+      <obj_property name="ObjectShortName">X0[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab01_test/X1" type="array">
+      <obj_property name="ElementShortName">X1[1:0]</obj_property>
+      <obj_property name="ObjectShortName">X1[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab01_test/X2" type="array">
+      <obj_property name="ElementShortName">X2[1:0]</obj_property>
+      <obj_property name="ObjectShortName">X2[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab01_test/X3" type="array">
+      <obj_property name="ElementShortName">X3[1:0]</obj_property>
+      <obj_property name="ObjectShortName">X3[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab01_test/Y" type="array">
+      <obj_property name="ElementShortName">Y[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab01_test/F" type="array">
+      <obj_property name="ElementShortName">F[1:0]</obj_property>
+      <obj_property name="ObjectShortName">F[1:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,30 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+CORRECT
+Error: cf = 0. cf should be 1
+Error: of = 1. of should be 0
+Error: of = 0. of should be 1
+Error: cf = 1. cf should be 0
+Error: of = 0. of should be 1
+Error: cf = 1. cf should be 0
+CORRECT
+Error: cf = 0. cf should be 1
+CORRECT
+Error: cf = 1. cf should be 0
+CORRECT
+Error: cf = 1. cf should be 0
+CORRECT
+Error: cf = 1. cf should be 0
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+Error: of = 0. of should be 1
+CORRECT
+CORRECT
+CORRECT

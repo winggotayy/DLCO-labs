@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 18 14:10:01 2023
+# Process ID: 2956
+# Current directory: F:/lab06/lab06.runs/impl_1
+# Command line: vivado.exe -log lab06_random.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab06_random.tcl -notrace
+# Log file: F:/lab06/lab06.runs/impl_1/lab06_random.vdi
+# Journal file: F:/lab06/lab06.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab06_random.tcl -notrace

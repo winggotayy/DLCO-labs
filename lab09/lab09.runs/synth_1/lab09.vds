@@ -1,0 +1,378 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jun 25 15:55:38 2023
+# Process ID: 10504
+# Current directory: E:/DigitalDesign2023/lab09/lab09.runs/synth_1
+# Command line: vivado.exe -log lab09.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab09.tcl
+# Log file: E:/DigitalDesign2023/lab09/lab09.runs/synth_1/lab09.vds
+# Journal file: E:/DigitalDesign2023/lab09/lab09.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab09.tcl -notrace
+Command: synth_design -top lab09 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4560
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab09' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/lab09.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clkgen_500hz' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/clkgen_500hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clkgen_500hz' (1#1) [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/clkgen_500hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'keyboard' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/keyboard.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ps2_keyboard' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/ps2_keyboard.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_keyboard' (2#1) [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/ps2_keyboard.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'out_wptr' does not match port width (3) of module 'ps2_keyboard' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/keyboard.v:66]
+WARNING: [Synth 8-689] width (1) of port connection 'out_rptr' does not match port width (3) of module 'ps2_keyboard' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/keyboard.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard' (3#1) [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/keyboard.v:23]
+INFO: [Synth 8-6157] synthesizing module 'scancode_ram' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/scancode_ram.v:23]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'F:/DigitalDesign2023/lab09/scancode/ascii_lower.txt'; please make sure the file is added to project and has read permission, ignoring [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/scancode_ram.v:34]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'F:/DigitalDesign2023/lab09/scancode/ascii_upper.txt'; please make sure the file is added to project and has read permission, ignoring [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/scancode_ram.v:35]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'scancode_ram' (4#1) [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/scancode_ram.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [E:/DigitalDesign2023/lab09/lab09.runs/synth_1/.Xil/Vivado-10504-PC8/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (5#1) [E:/DigitalDesign2023/lab09/lab09.runs/synth_1/.Xil/Vivado-10504-PC8/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (12) of port connection 'addra' does not match port width (11) of module 'blk_mem_gen_0' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/lab09.v:137]
+WARNING: [Synth 8-689] width (12) of port connection 'addrb' does not match port width (11) of module 'blk_mem_gen_0' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/lab09.v:138]
+INFO: [Synth 8-6157] synthesizing module 'vga' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/vga.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clkgen_2hz' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/clkgen_2hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clkgen_2hz' (6#1) [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/clkgen_2hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clkgen_5hz' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/clkgen_5hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clkgen_5hz' (7#1) [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/clkgen_5hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [E:/DigitalDesign2023/lab09/lab09.runs/synth_1/.Xil/Vivado-10504-PC8/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (8#1) [E:/DigitalDesign2023/lab09/lab09.runs/synth_1/.Xil/Vivado-10504-PC8/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_ctrl' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/vga_ctrl.v:23]
+	Parameter h_frontporch bound to: 96 - type: integer 
+	Parameter h_active bound to: 144 - type: integer 
+	Parameter h_backporch bound to: 784 - type: integer 
+	Parameter h_total bound to: 800 - type: integer 
+	Parameter v_frontporch bound to: 2 - type: integer 
+	Parameter v_active bound to: 35 - type: integer 
+	Parameter v_backporch bound to: 515 - type: integer 
+	Parameter v_total bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_ctrl' (9#1) [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/vga_ctrl.v:23]
+WARNING: [Synth 8-689] width (9) of port connection 'v_addr' does not match port width (10) of module 'vga_ctrl' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/vga.v:85]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [E:/DigitalDesign2023/lab09/lab09.runs/synth_1/.Xil/Vivado-10504-PC8/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (10#1) [E:/DigitalDesign2023/lab09/lab09.runs/synth_1/.Xil/Vivado-10504-PC8/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vga' (11#1) [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/vga.v:23]
+INFO: [Synth 8-6157] synthesizing module 'displaynum' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/displaynum.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clkgen_1kz' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/clkgen_1kz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clkgen_1kz' (12#1) [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/clkgen_1kz.v:23]
+INFO: [Synth 8-226] default block is never used [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/displaynum.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'displaynum' (13#1) [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/displaynum.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'AN' does not match port width (8) of module 'displaynum' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/lab09.v:190]
+WARNING: [Synth 8-689] width (1) of port connection 'HEX' does not match port width (7) of module 'displaynum' [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/lab09.v:191]
+INFO: [Synth 8-6155] done synthesizing module 'lab09' (14#1) [E:/DigitalDesign2023/lab09/lab09.srcs/sources_1/new/lab09.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1013.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1013.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1013.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1013.168 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/DigitalDesign2023/lab09/lab09.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'ram'
+Finished Parsing XDC File [e:/DigitalDesign2023/lab09/lab09.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'ram'
+Parsing XDC File [e:/DigitalDesign2023/lab09/lab09.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell '_vga_/nolabel_line73'
+Finished Parsing XDC File [e:/DigitalDesign2023/lab09/lab09.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell '_vga_/nolabel_line73'
+Parsing XDC File [e:/DigitalDesign2023/lab09/lab09.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell '_vga_/nolabel_line94'
+Finished Parsing XDC File [e:/DigitalDesign2023/lab09/lab09.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell '_vga_/nolabel_line94'
+Parsing XDC File [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'HEX[0]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'HEX[1]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'HEX[2]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'HEX[3]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'HEX[4]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'HEX[5]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'HEX[6]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc:71]
+Finished Parsing XDC File [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/lab09_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/DigitalDesign2023/lab09/lab09.srcs/constrs_1/new/nexysa7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab09_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab09_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1027.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1027.445 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ram' at clock pin 'clkb' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance '_vga_/nolabel_line94' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1030.430 ; gain = 17.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1030.430 ; gain = 17.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  e:/DigitalDesign2023/lab09/lab09.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  e:/DigitalDesign2023/lab09/lab09.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for _vga_/nolabel_line73. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for _vga_/nolabel_line94. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1030.430 ; gain = 17.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1030.430 ; gain = 17.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 5     
+	   3 Input   12 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 4     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	                9 Bit    Wide XORs := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 12    
++---RAMs : 
+	              240 Bit	(30 X 8 bit)          RAMs := 1     
+	               64 Bit	(8 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   4 Input   26 Bit        Muxes := 1     
+	   5 Input   26 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 6     
+	   3 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 20    
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 24    
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1030.430 ; gain = 17.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-------------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives  | 
++------------+-------------------------+-----------+----------------------+-------------+
+|kb          | nolabel_line57/fifo_reg | Implied   | 8 x 8                | RAM32M x 2	 | 
+|lab09       | row_end_pos_reg         | Implied   | 32 x 8               | RAM32M x 4	 | 
++------------+-------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1030.430 ; gain = 17.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1044.563 ; gain = 31.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-------------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives  | 
++------------+-------------------------+-----------+----------------------+-------------+
+|kb          | nolabel_line57/fifo_reg | Implied   | 8 x 8                | RAM32M x 2	 | 
+|lab09       | row_end_pos_reg         | Implied   | 32 x 8               | RAM32M x 4	 | 
++------------+-------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1060.055 ; gain = 46.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1060.234 ; gain = 47.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1060.234 ; gain = 47.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1060.234 ; gain = 47.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1060.234 ; gain = 47.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1060.234 ; gain = 47.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1060.234 ; gain = 47.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
+|2     |clk_wiz_0     |         1|
+|3     |blk_mem_gen_1 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     2|
+|3     |clk_wiz     |     1|
+|4     |CARRY4      |    48|
+|5     |LUT1        |    41|
+|6     |LUT2        |    40|
+|7     |LUT3        |    34|
+|8     |LUT4        |    76|
+|9     |LUT5        |    58|
+|10    |LUT6        |   197|
+|11    |MUXF7       |    22|
+|12    |MUXF8       |     8|
+|13    |RAM32M      |     6|
+|14    |FDCE        |     9|
+|15    |FDPE        |     1|
+|16    |FDRE        |   184|
+|17    |FDSE        |    13|
+|18    |IBUF        |     4|
+|19    |OBUF        |    19|
+|20    |OBUFT       |     3|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1060.234 ; gain = 47.066
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1060.234 ; gain = 29.805
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1060.234 ; gain = 47.066
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1071.234 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 84 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1071.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 26 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1071.234 ; gain = 58.066
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'E:/DigitalDesign2023/lab09/lab09.runs/synth_1/lab09.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab09_utilization_synth.rpt -pb lab09_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 25 15:56:12 2023...

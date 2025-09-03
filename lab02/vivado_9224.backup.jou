@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 15 17:30:24 2023
+# Process ID: 9224
+# Current directory: E:/lab02/lab02
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6620 E:\lab02\lab02\lab02.xpr
+# Log file: E:/lab02/lab02/vivado.log
+# Journal file: E:/lab02/lab02\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/lab02/lab02/lab02.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/lab02/lab02/lab02.srcs/constrs_1/new/nexysa7.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 E:/lab02/lab02/lab02.srcs/constrs_1/new/nexysa7.xdc
+close [ open E:/lab02/lab02/lab02.srcs/constrs_1/new/lab02.xdc w ]
+add_files -fileset constrs_1 E:/lab02/lab02/lab02.srcs/constrs_1/new/lab02.xdc

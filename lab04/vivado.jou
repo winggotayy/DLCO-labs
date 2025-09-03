@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 11 19:22:22 2023
+# Process ID: 3016
+# Current directory: F:/lab04
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6332 F:\lab04\lab04.xpr
+# Log file: F:/lab04/vivado.log
+# Journal file: F:/lab04\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/lab04/lab04.xpr
+update_compile_order -fileset sources_1
+file mkdir F:/lab04/lab04.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/lab04/lab04.srcs/sim_1/new/lab04_timer_test.v w ]
+add_files -fileset sim_1 F:/lab04/lab04.srcs/sim_1/new/lab04_timer_test.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation -mode post-synthesis -type functional
+launch_simulation
+source lab04_timer_test.tcl
+close_sim
+launch_simulation
+source lab04_timer_test.tcl
+close_sim

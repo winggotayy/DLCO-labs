@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+F:/DigitalDesign2023/lab08/lab08.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1684151750,verilog,,F:/DigitalDesign2023/lab08/lab08.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,,blk_mem_gen_0,,,../../../../lab08.gen/sources_1/ip/clk_wiz_0,,,,,
+F:/DigitalDesign2023/lab08/lab08.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1684151655,verilog,,F:/DigitalDesign2023/lab08/lab08.srcs/sources_1/new/vga_ctrl.v,,clk_wiz_0,,,../../../../lab08.gen/sources_1/ip/clk_wiz_0,,,,,
+F:/DigitalDesign2023/lab08/lab08.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1684151655,verilog,,F:/DigitalDesign2023/lab08/lab08.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../lab08.gen/sources_1/ip/clk_wiz_0,,,,,
+F:/DigitalDesign2023/lab08/lab08.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+F:/DigitalDesign2023/lab08/lab08.srcs/sources_1/new/lab08.v,1684153319,verilog,,,,lab08,,,../../../../lab08.gen/sources_1/ip/clk_wiz_0,,,,,
+F:/DigitalDesign2023/lab08/lab08.srcs/sources_1/new/vga_ctrl.v,1684151828,verilog,,F:/DigitalDesign2023/lab08/lab08.srcs/sources_1/new/lab08.v,,vga_ctrl,,,../../../../lab08.gen/sources_1/ip/clk_wiz_0,,,,,
